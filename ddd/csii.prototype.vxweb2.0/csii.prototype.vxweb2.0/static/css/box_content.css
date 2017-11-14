@@ -1,0 +1,47 @@
+/*主容器盒子*/
+.box_content
+{
+	margin-top:10px;
+}
+.content
+{
+	margin-top:10px;
+}
+.mynavbar 
+{
+	background:#2ecc71;
+}
+.myactive
+{
+	background:#339966;
+}
+/*字体闪烁*/
+#mytitle 
+{
+	color:red;
+	-webkit-animation:mytitlenaim 1s linear 0s infinite;
+	-moz-animation:mytitlenaim 1s linear 0s infinite;
+	-o-animation:mytitlenaim 1s linear 0s infinite;
+	-ms-animation:mytitlenaim 1s linear 0s infinite;
+	animation:mytitlenaim 1s linear 0s infinite;
+
+}
+@-webkit-keyframes mytitlenaim{	
+	50%{color:#2ecc71;opacity:1;}
+}
+@-moz-keyframes mytitlenaim{
+	50%{color:#2ecc71;opacity:1;}
+}
+@-o-keyframes mytitlenaim{
+	50%{color:#2ecc71;opacity:1;}
+}
+@-ms-keyframes mytitlenaim{
+	50%{color:#2ecc71;opacity:1;}
+}
+@keyframes mytitlenaim{
+	
+	50%{color:#2ecc71;opacity:1;}
+}
+
+
+

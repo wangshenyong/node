@@ -1,0 +1,285 @@
+.calendar {
+	
+	padding: 4px;
+	margin-top: 1px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	direction: ltr;
+	/*.dow {
+	 border-top: 1px solid #ddd !important;
+	 }*/
+}
+
+.calendar-inline {
+	width: 220px;
+}
+
+.calendar.calendar-rtl {
+	direction: rtl;
+}
+
+.calendar.calendar-rtl table tr td span {
+	float: right;
+}
+
+.calendar-dropdown {
+	top: 0;
+	left: 0;
+}
+
+.calendar-dropdown:before {
+	content: '';
+	display: inline-block;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #ccc;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: -7px;
+	left: 6px;
+}
+
+.calendar-dropdown:after {
+	content: '';
+	display: inline-block;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #ffffff;
+	position: absolute;
+	top: -6px;
+	left: 7px;
+}
+
+.calendar-dropdown-left {
+	top: 0;
+	left: 0;
+}
+
+.calendar-dropdown-left:before {
+	content: '';
+	display: inline-block;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #ccc;
+	border-bottom-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: -7px;
+	right: 6px;
+}
+
+.calendar-dropdown-left:after {
+	content: '';
+	display: inline-block;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #ffffff;
+	position: absolute;
+	top: -6px;
+	right: 7px;
+}
+
+.calendar>div {
+	display: none;
+}
+
+.calendar.days div.calendar-days {
+	display: block;
+}
+
+.calendar.months div.calendar-months {
+	display: block;
+}
+
+.calendar.years div.calendar-years {
+	display: block;
+}
+
+.calendar table {
+	margin: 0;
+}
+
+.calendar td,.calendar th {
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: none;
+}
+
+.table-striped .calendar table tr td,.table-striped .calendar table tr th
+	{
+	background-color: transparent;
+}
+
+.calendar table tr td.day:hover {
+	background: #eeeeee;
+	cursor: pointer;
+}
+
+.calendar table tr td.old,.calendar table tr td.new {
+	color: #999999;
+}
+
+.calendar table tr td.disabled,.calendar table tr td.disabled:hover {
+	background: none;
+	color: #999999;
+	cursor: default;
+}
+
+.calendar table tr td.today,.calendar table tr td.today:hover,.calendar table tr td.today.disabled,.calendar table tr td.today.disabled:hover
+	{
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #fde19a;
+	background-image: -moz-linear-gradient(top, #fdd49a, #fdf59a);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdd49a),
+		to(#fdf59a) );
+	background-image: -webkit-linear-gradient(top, #fdd49a, #fdf59a);
+	background-image: -o-linear-gradient(top, #fdd49a, #fdf59a);
+	background-image: linear-gradient(to bottom, #fdd49a, #fdf59a);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdd49a',
+		endColorstr='#fffdf59a', GradientType=0 );
+	border-color: #fdf59a #fdf59a #fbed50;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #fdf59a;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=  false );
+}
+
+.calendar table tr td.today:hover,.calendar table tr td.today:hover:hover,.calendar table tr td.today.disabled:hover,.calendar table tr td.today.disabled:hover:hover,.calendar table tr td.today:active,.calendar table tr td.today:hover:active,.calendar table tr td.today.disabled:active,.calendar table tr td.today.disabled:hover:active,.calendar table tr td.today.active,.calendar table tr td.today:hover.active,.calendar table tr td.today.disabled.active,.calendar table tr td.today.disabled:hover.active,.calendar table tr td.today.disabled,.calendar table tr td.today:hover.disabled,.calendar table tr td.today.disabled.disabled,.calendar table tr td.today.disabled:hover.disabled,.calendar table tr td.today[disabled],.calendar table tr td.today:hover[disabled],.calendar table tr td.today.disabled[disabled],.calendar table tr td.today.disabled:hover[disabled]
+	{
+	color: #ffffff;
+	background-color: #fdf59a;
+	*background-color: #fcf282;
+}
+
+.calendar table tr td.today:active,.calendar table tr td.today:hover:active,.calendar table tr td.today.disabled:active,.calendar table tr td.today.disabled:hover:active,.calendar table tr td.today.active,.calendar table tr td.today:hover.active,.calendar table tr td.today.disabled.active,.calendar table tr td.today.disabled:hover.active
+	{
+	background-color: #fbf069 \9;
+}
+
+.calendar table tr td.active,.calendar table tr td.active:hover,.calendar table tr td.active.disabled,.calendar table tr td.active.disabled:hover
+	{
+	color: #ffffff;
+	background-color: #006dcc;
+	background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc),
+		to(#0044cc) );
+	background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',
+		endColorstr='#ff0044cc', GradientType=0 );
+	border-color: #0044cc #0044cc #002a80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #0044cc;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=  false );
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.calendar table tr td.active:hover,.calendar table tr td.active:hover:hover,.calendar table tr td.active.disabled:hover,.calendar table tr td.active.disabled:hover:hover,.calendar table tr td.active:active,.calendar table tr td.active:hover:active,.calendar table tr td.active.disabled:active,.calendar table tr td.active.disabled:hover:active,.calendar table tr td.active.active,.calendar table tr td.active:hover.active,.calendar table tr td.active.disabled.active,.calendar table tr td.active.disabled:hover.active,.calendar table tr td.active.disabled,.calendar table tr td.active:hover.disabled,.calendar table tr td.active.disabled.disabled,.calendar table tr td.active.disabled:hover.disabled,.calendar table tr td.active[disabled],.calendar table tr td.active:hover[disabled],.calendar table tr td.active.disabled[disabled],.calendar table tr td.active.disabled:hover[disabled]
+	{
+	color: #ffffff;
+	background-color: #0044cc;
+	*background-color: #003bb3;
+}
+
+.calendar table tr td.active:active,.calendar table tr td.active:hover:active,.calendar table tr td.active.disabled:active,.calendar table tr td.active.disabled:hover:active,.calendar table tr td.active.active,.calendar table tr td.active:hover.active,.calendar table tr td.active.disabled.active,.calendar table tr td.active.disabled:hover.active
+	{
+	background-color: #003399 \9;
+}
+.calendar table tr td.tdw{
+	*width:193px;
+	}
+.calendar table tr td span {
+	display: block;
+	width: 23%;
+	*width:45px;
+	height: 54px;
+	line-height: 54px;
+	float: left;
+	margin: 1%;
+	*margin:0px;
+	cursor: pointer;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.calendar table tr td span:hover {
+	background: #eeeeee;
+}
+
+.calendar table tr td span.disabled,.calendar table tr td span.disabled:hover
+	{
+	background: none;
+	color: #999999;
+	cursor: default;
+}
+
+.calendar table tr td span.active,.calendar table tr td span.active:hover,.calendar table tr td span.active.disabled,.calendar table tr td span.active.disabled:hover
+	{
+	color: #ffffff;
+	background-color: #006dcc;
+	background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc),
+		to(#0044cc) );
+	background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',
+		endColorstr='#ff0044cc', GradientType=0 );
+	border-color: #0044cc #0044cc #002a80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #0044cc;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=  false );
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.calendar table tr td span.active:hover,.calendar table tr td span.active:hover:hover,.calendar table tr td span.active.disabled:hover,.calendar table tr td span.active.disabled:hover:hover,.calendar table tr td span.active:active,.calendar table tr td span.active:hover:active,.calendar table tr td span.active.disabled:active,.calendar table tr td span.active.disabled:hover:active,.calendar table tr td span.active.active,.calendar table tr td span.active:hover.active,.calendar table tr td span.active.disabled.active,.calendar table tr td span.active.disabled:hover.active,.calendar table tr td span.active.disabled,.calendar table tr td span.active:hover.disabled,.calendar table tr td span.active.disabled.disabled,.calendar table tr td span.active.disabled:hover.disabled,.calendar table tr td span.active[disabled],.calendar table tr td span.active:hover[disabled],.calendar table tr td span.active.disabled[disabled],.calendar table tr td span.active.disabled:hover[disabled]
+	{
+	color: #ffffff;
+	background-color: #0044cc;
+	*background-color: #003bb3;
+}
+
+.calendar table tr td span.active:active,.calendar table tr td span.active:hover:active,.calendar table tr td span.active.disabled:active,.calendar table tr td span.active.disabled:hover:active,.calendar table tr td span.active.active,.calendar table tr td span.active:hover.active,.calendar table tr td span.active.disabled.active,.calendar table tr td span.active.disabled:hover.active
+	{
+	background-color: #003399 \9;
+}
+
+.calendar table tr td span.old {
+	color: #999999;
+}
+
+.calendar th.switch {
+	width: 145px;
+}
+
+.calendar thead tr:first-child th,.calendar tfoot tr:first-child th {
+	cursor: pointer;
+}
+
+.calendar thead tr:first-child th:hover,.calendar tfoot tr:first-child th:hover
+	{
+	background: #eeeeee;
+}
+
+
+.calendar  .table-condensed  thead tr:last th:first{
+	background: red;
+}
+.calendar .calendar-days  tbody tr td.tdColor{
+	color: #1d65a9;
+	font-weight:bold;
+}

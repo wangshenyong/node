@@ -1,0 +1,37 @@
+{
+  "name": "vx-ui",
+  "version": "2.4.7",
+  "description": "build for vx",
+  "homepage": "http://www.csii.com.cn/hercules/v",
+  "main": "build/js/vx.js",
+  "scripts": {
+    "start": "grunt dev",
+    "dev": "grunt dev",
+    "dist": "grunt dist",
+    "prod": "grunt prod",
+    "prep": "grunt prep"
+  },
+  "keywords": [
+    "vx-ui",
+    "vx"
+  ],
+  "devDependencies": {
+    "express": "^4.15.3",
+    "grunt": "^1.0.1",
+    "grunt-compile-handlebars": "^2.0.2",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-nodemon": "^0.4.2",
+    "http-proxy-middleware": "^0.17.4"
+  },
+  "author": {
+    "name": "CSII",
+    "email": "frontend@csii.com.cn",
+    "url": "http://www.csii.com.cn"
+  },
+  "license": "BSD"
+}

@@ -1,0 +1,33 @@
+.my_login {
+    width: 700px;
+    height: 550px;
+    transform: scale(0.3);
+    transform:translate(60%,100px);
+    background: none;
+    overflow: hidden;
+}
+
+.my_login>img {
+    width: 642px;
+    height: 500px;
+    position: absolute;
+    left: 20px;
+    top: 15px
+}
+
+.my_login_screen {
+    min-height: 333px;
+}
+
+.my_login_icon {
+    top: 104px;
+    left: 103px;
+}
+
+.my_login-form {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 270px;
+}

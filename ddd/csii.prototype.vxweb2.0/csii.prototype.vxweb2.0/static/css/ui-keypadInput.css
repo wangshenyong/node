@@ -1,0 +1,37 @@
+.numpad {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 160px;
+    width: 100%;
+    z-index: 10;
+    background: #999999;
+}
+.numpad .button-wrapper {
+    width: 100%;
+}
+.numpad .button-wrapper button {
+    display: block;
+    float: left;
+    width: 32%;
+    height: 30px;
+    margin-left: 0.6666%;
+    margin-right: 0.6666%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 24px;
+    border-radius: 2px;
+    color: #5D5D5D;
+    background-color: #FFFFFF;
+}
+.numpad .button-wrapper .small {
+    font-size: 20px;
+}
+.keypad-disabled .numpad .button-wrapper .normal,
+.numpad .button-wrapper .pressed {
+    opacity: 0.5;
+}
+.mt5{margin-top:5px;}
+/**手机键盘 结束*/

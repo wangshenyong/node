@@ -1,0 +1,28 @@
+<div v-lazy-load="htmls/login/loginCtrl.js">
+    <div v-controller="loginCtrl">
+        <div class="login my_login">
+            <img src="css/img/login/imac.png"></img>
+            <div class="login-screen my_login_screen">
+                <div class="login-icon my_login_icon">
+                    <img src="css/img/login/icon.png" alt="Welcome to Mail App">
+                    <h4><small>&nbsp;&nbsp;漏&nbsp;洞&nbsp;记&nbsp;录&nbsp;</small></h4>
+                </div>
+                <form v-submit="login()" name="login_form">
+                    <div class="login-form my_login-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control login-field"  placeholder="用户名" id="login-name" v-model="user" required="true">
+                            <label class="login-field-icon fui-user" for="login-name"></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control login-field"  placeholder="密码" id="login-pass"
+                            v-model="password">
+                            <label class="login-field-icon fui-lock" for="login-pass"></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">登录</button>
+                        <a class="login-link" href="#">找回密码</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

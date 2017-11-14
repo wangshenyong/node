@@ -1,0 +1,16 @@
+<ul class="menu" id='mymenu'>
+    <li v-repeat="item in data" v-mouseenter="setulleft($index)" id={{$index}}>
+        <a href="javascript:;" >
+            {{item.title}}
+        </a>
+        <ul class="menu_li_ul" v-show="item.childmenu">
+            <li v-repeat="child_item in item.childmenu" v-click="child_item.callback">
+                <img src="{{child_item.imgUrl}}" />
+                    <a class="menu_bottom_a" href="javascript:;" >
+                        {{child_item.title}}
+                    </a>
+               
+            </li>
+        </ul>
+    </li>
+</ul>

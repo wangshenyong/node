@@ -1,0 +1,16 @@
+<tfoot>
+  <tr>
+    <td colspan='8'>
+    <div class="page add_box" >
+      <div class="link">
+      <a  v-click="topPage(getPagerName())">  首页 </a>
+      <a  v-click="prevPage(getPagerName())"> 上一页 </a>
+      <a v-click="nextPage(getPagerName())"> 下一页  </a>
+      <a  v-click="bottomPage(getPagerName())"> 尾页</a>
+      <span style="display: inline-block;width:26px;">{{$eval(getPagerName())["currentPage"]}}/{{$eval(getPagerName())["totalPage"]}}</span>
+    </div>
+    </div>  
+  </td>
+  </tr>
+</tfoot>
+

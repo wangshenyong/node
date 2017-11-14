@@ -1,0 +1,83 @@
+@charset "utf-8";
+/**
+ *  desk account info 
+ */
+div.slideBox{ position:relative; width:590px; height:220px; overflow:hidden;}
+div.slideBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.slideBox ul.items li{ float:left; background:none; list-style:none; padding:0px; margin:0px;width:550px; height:150px;}
+div.slideBox ul.items li a{ float:left; line-height:normal !important; padding:0px !important; border:none;}
+div.slideBox ul.items li a img{ margin:0px !important; padding:0px !important; display:block; border:none;}
+div.slideBox div.tips{ position:absolute; bottom:0px; width:100%; height:50px; background-color:#000; overflow:hidden;opacity: 0.6;}
+div.slideBox div.tips div.nums{ position:absolute; right:0px; top:30%; height:100%;}
+div.slideBox div.tips div.nums a{ display:inline-block; >float:left; width:20px; height:20px; background-color:#FFF; text-indent:-99999px; margin:15px 10px 0px 0px;}
+div.slideBox div.tips div.nums a.active{ background-color:#093;}
+div.slideBox div.tips div.nums ul li {border-radius: 10px;background-color: #FFF;width: 20px;height: 20px;list-style: none;display: inline-block;cursor: pointer;}
+div.slideBox div.tips div.nums ul li.active{ background-color:#093;}
+div.slideBox div.bigContent{float: left;left: 50px;width: 80%;height: 100%; top: 30px;position: relative;overflow: hidden;}
+
+/**
+ *  desk menu info 
+ */
+div.deskBox{ position:relative;width:790px; height:500px;overflow:hidden;}
+div.deskBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.deskBox ul.items li{ float:left; background:none; list-style:none; padding:0px; margin:0px;width:790px; height:500px;}
+div.deskBox ul.items li a{ float:left; line-height:normal !important; padding:0px !important; border:none;}
+div.deskBox ul.items li a img{ margin:0px !important; padding:0px !important; display:block; border:none;}
+div.deskBox div.tips{ position:absolute; bottom:0px; width:100%; height:50px; /*background-color:#000;*/ overflow:hidden;opacity: 0.6;}
+div.deskBox div.tips div.nums{ position:absolute; right: 50%;top: 50%; height:100%;}
+div.deskBox div.tips div.nums a{ display:inline-block; >float:left; width:20px; height:20px; background-color:#FFF; text-indent:-99999px; margin:15px 10px 0px 0px;}
+div.deskBox div.tips div.nums a.active{ background-color:#093;}
+div.deskBox div.tips div.nums ul li {border-radius: 10px;background-color: #7F8C8D;width: 15px;height: 15px;list-style: none;display: inline-block;cursor: pointer;margin-left:10px;}
+div.deskBox div.tips div.nums ul li:hover {border-radius: 10px;background-color: #ECF0F1;width: 15px;height: 15px;list-style: none;display: inline-block;cursor: pointer;margin-left:10px;}
+div.deskBox div.tips div.nums ul li.active{ background-color:#ECF0F1;}
+
+
+/**
+ *  desk message of login info 
+ */
+div.messageLoginBox{ position:relative;width:590px; height:220px;overflow:hidden;}
+div.messageLoginBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;overflow: hidden;}
+div.messageLoginBox ul.items li{ float:left; background:none; list-style:none; padding:0px; margin:0px;width:290px; height:205px;}
+div.messageLoginBox ul.items li a{ float:left; line-height:normal !important; padding:0px !important; border:none;}
+div.messageLoginBox ul.items li a img{ margin:0px !important; padding:0px !important; display:block; border:none;}
+div.messageLoginBox div.tips{ position:absolute; bottom:0px; width:100%; height:50px; /*background-color:#000;*/ overflow:hidden;opacity: 0.6;}
+div.messageLoginBox div.tips div.nums{ position:absolute; right: 50%;top: 50%; height:100%;}
+div.messageLoginBox div.tips div.nums a{ display:inline-block; >float:left; width:20px; height:20px; background-color:#FFF; text-indent:-99999px; margin:15px 10px 0px 0px;}
+div.messageLoginBox div.tips div.nums a.active{ background-color:#093;}
+div.messageLoginBox div.tips div.nums ul li {border-radius: 10px;background-color: #7F8C8D;width: 15px;height: 15px;list-style: none;display: inline-block;cursor: pointer;margin-left:10px;}
+div.messageLoginBox div.tips div.nums ul li:hover {border-radius: 10px;background-color: #ECF0F1;width: 15px;height: 15px;list-style: none;display: inline-block;cursor: pointer;margin-left:10px;}
+div.messageLoginBox div.tips div.nums ul li.active{ background-color:#ECF0F1;}
+
+
+/**
+ *  desk message of account info 
+ */
+div.messageAccountBox{ position:relative; width:590px; height:220px; overflow:hidden;}
+div.messageAccountBox ul.items{ position:absolute; float:left; background:none; list-style:none; padding:0px; margin:0px;}
+div.messageAccountBox ul.items li{ float:left; background:none; list-style:none; padding:0px; margin:0px;width:550px; height:150px;}
+div.messageAccountBox ul.items li a{ float:left; line-height:normal !important; padding:0px !important; border:none;}
+div.messageAccountBox ul.items li a img{ margin:0px !important; padding:0px !important; display:block; border:none;}
+div.messageAccountBox div.tips{ position:absolute; bottom:0px; width:100%; height:50px; background-color:#000; overflow:hidden;opacity: 0.6;}
+div.messageAccountBox div.tips div.nums{ position:absolute; right:0px; top:30%; height:100%;}
+div.messageAccountBox div.tips div.nums a{ display:inline-block; >float:left; width:20px; height:20px; background-color:#FFF; text-indent:-99999px; margin:15px 10px 0px 0px;}
+div.messageAccountBox div.tips div.nums a.active{ background-color:#093;}
+div.messageAccountBox div.tips div.nums ul li {border-radius: 10px;background-color: #FFF;width: 20px;height: 20px;list-style: none;display: inline-block;cursor: pointer;}
+div.messageAccountBox div.tips div.nums ul li.active{ background-color:#093;}
+div.messageAccountBox div.bigContent{}
+
+
+/**
+ *  desk select of account info 
+ */
+div.selectAccountCard{ position:relative; width:450px; height:170px; overflow:hidden;  }
+div.selectAccountCard ul.items{ position:absolute; float:left; background:none; list-style:none; margin:0px;}
+div.selectAccountCard ul.items li{ border-top-left-radius: 5px;-webkit-border-top-left-radius: 5px;float:left; background:none; list-style:none; padding:0px; margin:0px;width:450px; height:170px;}
+div.selectAccountCard ul.items li a{ float:left; line-height:normal !important; padding:0px !important; border:none;}
+div.selectAccountCard ul.items li a img{ margin:0px !important; padding:0px !important; display:block; border:none;}
+div.selectAccountCard div.tips{ opacity: 0.9;padding-left:300px;}
+div.selectAccountCard div.tips div.nums{}
+div.selectAccountCard div.tips div.nums a{ }
+div.selectAccountCard div.tips div.nums a.active{ }
+div.selectAccountCard div.tips div.nums ul li {list-style: none;cursor: pointer; background-image: url(img/account03.png);height: 50px;width: 80px;background-repeat: no-repeat; }
+div.selectAccountCard div.tips div.nums ul li.active{ background-image: url(img/account02.png);height: 50px;width: 80px;background-repeat: no-repeat; }
+div.selectAccountCard div.bigContent{}

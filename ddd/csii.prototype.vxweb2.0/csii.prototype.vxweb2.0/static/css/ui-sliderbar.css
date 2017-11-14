@@ -1,0 +1,92 @@
+/*wbr 滑动条样式 开始*/
+.slider {
+	vertical-align: middle;
+	position: relative;
+	width: 210px;
+	height: 100px;
+	line-height: 36px;
+	margin: 0 auto;
+}
+
+.slider .slider-bar {
+	height: 5px;
+	width: 100%;
+	top: 0px;
+	left: 0;
+	margin-top: 45px;
+	position: absolute;
+	cursor: pointer;
+	background-color: rgb(228, 230, 234);
+	border-radius: 4px;
+}
+
+.slider .slider-selection {
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: rgb(197, 38, 29);
+	border-radius: 4px;
+}
+
+.slider .slider-handle {
+	margin-left: -10px;
+	margin-top: -10px;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: rgb(197, 38, 29);
+	opacity: 1;
+	border: 2px solid #FFFFFF;
+	border-radius: 6px;
+}
+
+.slider-title {
+	position: absolute;
+	color: rgb(199, 65, 60);
+	top: 0;
+	left: 0;
+}
+
+.slider-min {
+	position: absolute;
+	color: rgb(143, 143, 143);
+	top: 65px;
+	left: 0;
+}
+
+.slider-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: rgb(197, 38, 29);
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.slider-max {
+	position: absolute;
+	color: rgb(143, 143, 143);
+	top: 65px;
+	right: 0;
+}
+.slider-delete{
+	position: absolute;
+	color: black;
+	top: 28px;
+    font-size: 25px;
+    left:-27px;
+    width:20px;
+}
+.slider-add{
+	position: absolute;
+	color: black;
+	top: 28px;
+    font-size: 25px;
+    right:-30px;
+    width:20px;
+}
+/*wbr 滑动条样式 结束*/
+/**手机上展示用到的样式*/
+.row-fluid .col-md-12{width:100%!important;}

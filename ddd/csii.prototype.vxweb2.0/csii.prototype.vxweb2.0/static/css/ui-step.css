@@ -1,0 +1,83 @@
+  .zzxxline {
+    background: url(img/ui-step/zzxx_line.png) repeat-y;
+    width: 1px;
+    height: 70%;
+    position: absolute;
+    left: 37px;
+    top: 25px;
+    z-index: 10;
+  }
+  
+  .pay02 {
+    background: #f7f9fc;
+    width: auto;
+    margin-top: 10px;
+    padding: 10px 0px;
+  }
+  
+  .payinput {
+    width: 300px;
+  }
+  
+  td {
+    border-top: 1px solid #999999;
+    border-right: 1px solid #999999;
+    padding-left: 5px;
+    height: 30px;
+  }
+  
+  .td {
+    border-bottom: 1px solid #999999;
+  }
+  
+  .pay1 {
+    width: auto;
+    clear: both;
+    overflow: hidden;
+    text-indent: 12px;
+  }
+  
+  .pay1 img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .pay1 b {
+    color: #072e71;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 5px;
+  }
+  
+  .payleft {
+    width: 30%;
+    float: left;
+    line-height: 24px;
+    text-align: right;
+  }
+  
+  .payright {
+    width: 70%;
+    float: right;
+    line-height: 22px;
+  }
+  
+  .payright a {
+    color: #090;
+    margin-left: 10px;
+  }
+  
+  .pay01 {
+    margin-top: 10px;
+    background: #ebeff8;
+    width: auto;
+    padding: 10px 0px;
+    position: relative;
+  }
+  
+  .pay02 {
+    background: #f7f9fc;
+    width: auto;
+    padding: 10px 0px;
+    position: relative;
+  }

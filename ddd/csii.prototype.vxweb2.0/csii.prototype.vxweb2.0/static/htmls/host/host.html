@@ -1,0 +1,110 @@
+<div v-lazy-load="htmls/host/hostCtrl.js">
+    <div v-controller="hostCtrl" v-init="init()">
+        <table class="table  table-bordered table-hover text-center">
+            <caption>主机录入表(没有数据登录试试)</caption>
+            <thead>
+                <tr>
+                    <th class="text-center">序号</th>
+                    <th class="text-center">主机名</th>
+                    <th class="text-center">ip</th>
+                    <th class="text-center">入库时间</th>
+                    <th class="text-center">扫描编码</th>
+                    <th class="text-center">扫描标识</th>
+                    <th class="text-center">删除</th>
+                    <th class="text-center">修改</th>
+                </tr>
+            </thead>
+            <tbody table-bordered id="tbody">
+                <tr ng-repeat="valueJson in fromJson track by $index">
+                    <td ser_id={{valueJson.id}} name="index_id">{{$index}}</td>
+                    <td>{{valueJson.host}}</td>
+                    <td>{{valueJson.ip}}</td>
+                    <td>{{valueJson.insertdate}}</td>
+                    <td>{{valueJson.scancode}}</td>
+                    <td>{{valueJson.scanflag}}</td>
+                    <td>
+                        <button type="button" class="btn btn-success" v-click="deleted($event)">删除</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-success" v-click="change($event)">修改</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">
+                        <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" v-click="showmodal()">添加</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-left">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="exampleModalLabel ">添加主机</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="host" class="col-sm-2 control-label">主机名</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="host" placeholder="主机名">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="ip" class="col-sm-2 control-label">ip地址</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="ip" placeholder="ip地址">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="insertdate" class="col-sm-2 control-label">入库时间</label>
+                                                <div class="col-sm-10">
+                                                    <input type="date" class="form-control" id="insertdate" placeholder="入库时间">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="scancode" class="col-sm-2 control-label">扫描编码</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="scancode" placeholder="扫描编码">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="scanflag" class="col-sm-2 control-label">扫描标识</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="scanflag" placeholder="扫描标识">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-dismiss="modal">关闭</button>
+                                        <button type="button" class="btn btn-primary" v-click="addtr()">添加</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="pull-right">
+            <ul class="pagination pagination-minimal" id="uipage" v-click="uipages($event)">
+                <li class="previous">
+                    <a href="javascript:;" class="fui-arrow-left" id="pre"></a>
+                </li>
+                <li class="active">
+                    <a href="javascript:;" name="fakelink">1</a>
+                </li>
+                <li><a href="javascript:;" name="fakelink">2</a></li>
+                <li><a href="javascript:;" name="fakelink">3</a></li>
+                <li><a href="javascript:;" name="fakelink">4</a></li>
+                <li><a href="javascript:;" name="fakelink">5</a></li>
+                <li><a href="javascript:;" name="fakelink">6</a></li>
+                <li><a href="javascript:;" name="fakelink">7</a></li>
+                <li><a href="javascript:;" name="fakelink">8</a></li>
+                <li><a href="javascript:;" name="fakelink">9</a></li>
+                <li><a href="javascript:;" name="fakelink">10</a></li>
+                <li class="next"><a href="javascript:;" class="fui-arrow-right" id="next"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

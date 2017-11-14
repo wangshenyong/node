@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>same_height</title>
+    <style>
+        html,body
+        {
+            width:100%;
+            height: 100%;
+            margin:0px;
+            padding:0px;
+        }
+        .left_wrap
+        {
+            width:100%;
+            position:relative;
+            background:red;
+            float:left;
+        }
+        .right_wrap
+        {
+            width:100%;
+            position:relative;
+            background:yellow;
+            left:200px;
+            float:left;
+        }
+        .left
+        {
+            width:200px;
+            float:left;
+            position:relative;
+            right:200px;
+            height:200px;
+        }
+        .right
+        {
+            margin-left:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left_wrap">
+        <div class="right_wrap">
+            <div class="left">left</div>
+            <div class="right">right</div>
+        </div>
+    </div>                                                   
+</body>
+</html>

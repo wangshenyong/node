@@ -1,0 +1,52 @@
+.mybox
+{
+  width:100%;
+  background:blue;
+  height:100%;
+  position:relative;
+}
+.mybox>ul
+{
+ list-style:none;
+ padding:0px;
+ margin:0px;
+ height:70px;
+ width:100%;	 
+ display:block;
+ position:absolute;
+margin:10px auto;
+}
+.mybox>ul>li
+{
+display:inline-block;
+margin:10px;
+background:yellow;
+width:100px;
+height:40px;
+}
+.mybox>.content
+{
+background:red;
+width:100%;
+height:100%;
+box-sizing:border-box;
+padding-top:70px;
+
+}
+.contentshow
+{
+    display:none;
+}
+.contenthide
+{
+    display:block;
+}
+.mybox>.content>div
+{
+width:100px;
+height:100px;
+margin:10px;
+background:blue;
+float:left;
+
+}
